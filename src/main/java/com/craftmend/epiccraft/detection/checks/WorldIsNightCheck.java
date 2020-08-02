@@ -1,6 +1,6 @@
-package com.craftmend.epiccraft.soundpack.checks;
+package com.craftmend.epiccraft.detection.checks;
 
-import com.craftmend.epiccraft.soundpack.interfaces.RequirementTest;
+import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 import org.bukkit.entity.Player;
 
 public class WorldIsNightCheck implements RequirementTest {

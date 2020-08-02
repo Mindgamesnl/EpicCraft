@@ -1,4 +1,4 @@
-package com.craftmend.epiccraft.soundpack.interfaces;
+package com.craftmend.epiccraft.detection.interfaces;
 
 import org.bukkit.entity.Player;
 

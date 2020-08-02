@@ -1,6 +1,6 @@
-package com.craftmend.epiccraft.soundpack.enums;
+package com.craftmend.epiccraft.detection.enums;
 
-import com.craftmend.epiccraft.soundpack.interfaces.RequirementTest;
+import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 
 import java.util.HashMap;
 import java.util.Map;
