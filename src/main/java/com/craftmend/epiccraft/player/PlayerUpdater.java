@@ -28,6 +28,14 @@ public class PlayerUpdater implements Runnable {
 
     @Override
     public void run() {
+        try {
+            tick();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void tick() {
         for (Player player : Bukkit.getOnlinePlayers()) {
             ClientConnection connection = OpenAudioMc.getInstance().getNetworkingService().getClient(player.getUniqueId());
             if (!connection.isConnected()) continue;

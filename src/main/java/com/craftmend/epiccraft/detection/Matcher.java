@@ -20,6 +20,16 @@ public class Matcher {
                     metRequirementsForSound++;
                 } else {
                     metRequirementsForSound--;
+                    if (requirement == null) {
+                        System.out.println("How is a requirement null?");
+                        continue goOverSound;
+                    }
+
+                    if (requirement.getTest() == null) {
+                        System.out.println("How is a test null?");
+                        continue goOverSound;
+                    }
+
                     if (requirement.getTest().isAbsolutelyNecessary()) continue goOverSound;
                 }
             }

@@ -27,7 +27,9 @@ public class AudioService {
     public void initializeAudio(Sound[] clips) {
         mediaSources.clear();
         for (Sound clip : clips) {
-            mediaSources.put(clip.getRandomId(), new RegionMedia(clip.getSource(), 100));
+            RegionMedia media = new RegionMedia(clip.getSource(), 100);
+            media.setDoPickup(true);
+            mediaSources.put(clip.getRandomId(), media);
         }
     }
 

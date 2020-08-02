@@ -31,7 +31,7 @@ public final class EpicCraft extends JavaPlugin {
 
         // do threading
         executorService = new ExecutorService(this);
-        executorService.getSecondRunnables().add(new PlayerUpdater(this));
+        executorService.getTickRunnables().add(new PlayerUpdater(this));
     }
 
     public void loadSoundpack() throws FileNotFoundException {

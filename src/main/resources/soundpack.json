@@ -21,7 +21,7 @@
     {
       "name": "Underwater",
       "source": "https://www.youtube.com/watch?v=tOeIWZtTlUk",
-      "requirements": ["UNDER_WATER", "DAY", "NIGHT"]
+      "requirements": ["UNDER_WATER"]
     },
 
     {
