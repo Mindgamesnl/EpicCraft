@@ -1,8 +1,10 @@
 package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
+import lombok.NoArgsConstructor;
 import org.bukkit.entity.Player;
 
+@NoArgsConstructor
 public class WorldIsNightCheck implements RequirementTest {
 
     @Override

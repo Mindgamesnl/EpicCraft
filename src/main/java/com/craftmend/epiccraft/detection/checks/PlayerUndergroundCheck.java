@@ -1,11 +1,13 @@
 package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
+import lombok.NoArgsConstructor;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.util.Objects;
 
+@NoArgsConstructor
 public class PlayerUndergroundCheck implements RequirementTest {
 
     private final int radius = 5;

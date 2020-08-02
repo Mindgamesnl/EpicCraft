@@ -2,9 +2,11 @@ package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 import com.craftmend.epiccraft.utils.LogicUtil;
+import lombok.NoArgsConstructor;
 import org.bukkit.block.Biome;
 import org.bukkit.entity.Player;
 
+@NoArgsConstructor
 public class OceanBiomeCheck implements RequirementTest {
 
     private Biome[] oceanBiomes = new Biome[]{

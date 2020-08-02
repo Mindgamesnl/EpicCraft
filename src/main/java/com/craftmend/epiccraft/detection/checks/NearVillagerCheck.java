@@ -1,10 +1,12 @@
 package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
+import lombok.NoArgsConstructor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 
+@NoArgsConstructor
 public class NearVillagerCheck implements RequirementTest {
 
     int radius = 50;

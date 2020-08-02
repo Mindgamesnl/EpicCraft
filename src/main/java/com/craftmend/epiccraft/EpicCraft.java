@@ -1,9 +1,13 @@
 package com.craftmend.epiccraft;
 
+import com.craftmend.epiccraft.command.EpicSubCommand;
 import com.craftmend.epiccraft.soundpack.Soundpack;
+import com.craftmend.openaudiomc.OpenAudioMc;
 import lombok.Getter;
 import lombok.SneakyThrows;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.FileNotFoundException;
 
 public final class EpicCraft extends JavaPlugin {
 
@@ -14,9 +18,14 @@ public final class EpicCraft extends JavaPlugin {
     public void onEnable() {
         // save default soundpack
         saveResource("soundpack.json", false);
+        loadSoundpack();
 
-        // load default soundpack
-        soundpack = new Soundpack(getDataFolder() + "soundpack.json");
+        // register command
+        OpenAudioMc.getInstance().getCommandModule().registerSubCommand(new EpicSubCommand(this));
+    }
+
+    public void loadSoundpack() throws FileNotFoundException {
+        soundpack = new Soundpack(getDataFolder() + "/soundpack.json");
     }
 
     @Override

@@ -80,5 +80,12 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.craftmend.openaudiomc</groupId>
+            <artifactId>OpenAudioMc</artifactId>
+            <version>6.3.4</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>
