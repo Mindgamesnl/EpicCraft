@@ -1,0 +1,36 @@
+[
+  {
+    "source": "https://www.youtube.com/watch?v=g_XeqmAMd9U",
+    "requirements": ["OCEAN_BIOME"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=2NKPXPoROqA",
+    "requirements": ["NEAR_VILLAGER"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=hPxvmkeG2iE",
+    "requirements": ["HOT_BIOME"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=jwKpZUO51Dg",
+    "requirements": ["ABOVE_GROUND", "DAY", "NORMAL_BIOME"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=i5y8Ib00mIY",
+    "requirements": ["UNDER_GROUND", "NIGHT"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=4WGiL2U5D4o",
+    "requirements": ["ABOVE_GROUND", "NIGHT"]
+  },
+
+  {
+    "source": "https://www.youtube.com/watch?v=hy-v42BLom4",
+    "requirements": ["SNOWY_BIOME"]
+  }
+]

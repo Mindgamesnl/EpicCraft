@@ -1,0 +1,8 @@
+name: Epiccraft
+version: ${project.version}
+main: com.craftmend.epiccraft.EpicCraft
+api-version: 1.13
+depend: [OpenAudioMc]
+authors: [Mindgamesnl]
+description: Yeah
+website: https://craftmend.com/
