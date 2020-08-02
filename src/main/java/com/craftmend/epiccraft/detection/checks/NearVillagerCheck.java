@@ -1,6 +1,7 @@
 package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
+import com.craftmend.epiccraft.utils.LogicUtil;
 import lombok.NoArgsConstructor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -15,7 +16,7 @@ public class NearVillagerCheck implements RequirementTest {
     public boolean isApplicable(Player player) {
         boolean foundVillager = false;
 
-        for (Entity nearbyEntity : player.getLocation().getWorld().getNearbyEntities(player.getLocation(), 50, 50, 50)) {
+        for (Entity nearbyEntity : LogicUtil.getEntitiesAroundPoint(player.getLocation(), radius)) {
             if (nearbyEntity.getType() == EntityType.VILLAGER) {
                 foundVillager = true;
             }
