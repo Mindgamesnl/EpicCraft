@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 public class Sound {
 
     private String source;
-    private SoundRequirement requirements;
+    private SoundRequirement[] requirements;
 
 }

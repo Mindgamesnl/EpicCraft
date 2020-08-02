@@ -5,6 +5,8 @@ import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 import lombok.Getter;
 import lombok.SneakyThrows;
 
+import java.lang.reflect.InvocationTargetException;
+
 
 public enum SoundRequirement {
 
@@ -21,14 +23,18 @@ public enum SoundRequirement {
     @Getter
     private final RequirementTest test;
 
-    @SneakyThrows
     SoundRequirement(Class<?> check) {
         if (RequirementCache.TEST_CACHE.containsKey(check)) {
             test = RequirementCache.TEST_CACHE.get(check);
             return;
         }
 
-        RequirementTest instance = (RequirementTest) check.getConstructor().newInstance();
+        RequirementTest instance = null;
+        try {
+            instance = (RequirementTest) check.getConstructor().newInstance();
+        } catch (InvocationTargetException | NoSuchMethodException | IllegalAccessException | InstantiationException e) {
+            System.out.println("[EpicCraft] Failed to load " + toString() + "!");
+        }
         RequirementCache.TEST_CACHE.put(check, instance);
         test = instance;
     }
