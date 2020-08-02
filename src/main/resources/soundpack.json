@@ -1,41 +1,49 @@
 {
   "sounds": [
     {
+      "name": "Ocean biome",
       "source": "https://www.youtube.com/watch?v=g_XeqmAMd9U",
       "requirements": ["OCEAN_BIOME"]
     },
 
     {
+      "name": "Village day ambiance",
       "source": "https://www.youtube.com/watch?v=2NKPXPoROqA",
-      "requirements": ["NEAR_VILLAGER"]
+      "requirements": ["NEAR_VILLAGER", "DAY", "ABOVE_GROUND"]
     },
 
     {
+      "name": "A hot night",
       "source": "https://www.youtube.com/watch?v=hPxvmkeG2iE",
       "requirements": ["HOT_BIOME", "NIGHT"]
     },
 
     {
+      "name": "A hot day",
       "source": "https://www.youtube.com/watch?v=6_hBKIQmTnE",
       "requirements": ["HOT_BIOME", "DAY"]
     },
 
     {
+      "name": "A normal day",
       "source": "https://www.youtube.com/watch?v=jwKpZUO51Dg",
       "requirements": ["ABOVE_GROUND", "DAY", "NORMAL_BIOME"]
     },
 
     {
+      "name": "An underground night",
       "source": "https://www.youtube.com/watch?v=i5y8Ib00mIY",
       "requirements": ["UNDER_GROUND", "NIGHT"]
     },
 
     {
+      "name": "A normal night",
       "source": "https://www.youtube.com/watch?v=4WGiL2U5D4o",
       "requirements": ["ABOVE_GROUND", "NIGHT"]
     },
 
     {
+      "name": "Cold as fuck boi",
       "source": "https://www.youtube.com/watch?v=hy-v42BLom4",
       "requirements": ["SNOWY_BIOME"]
     }

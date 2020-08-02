@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Sound {
 
+    private String name;
     private String source;
     private SoundRequirement[] requirements;
 
