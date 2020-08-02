@@ -15,7 +15,11 @@ public class Matcher {
             // go over all requirements, and +1 for each that is met
             int metRequirementsForSound = 0;
             for (SoundRequirement requirement : sound.getRequirements()) {
-                if (metRequirementsByPlayer.contains(requirement)) metRequirementsForSound++;
+                if (metRequirementsByPlayer.contains(requirement)) {
+                    metRequirementsForSound++;
+                } else {
+                    metRequirementsForSound--;
+                }
             }
 
             if (metRequirementsForSound > highestScore) {

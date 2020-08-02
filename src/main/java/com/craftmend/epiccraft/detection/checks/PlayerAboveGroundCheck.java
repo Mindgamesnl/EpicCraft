@@ -17,17 +17,19 @@ public class PlayerAboveGroundCheck implements RequirementTest {
 
         Location center = player.getLocation();
         boolean isAbove = false;
+        int surface = radius * radius;
+        int detectedBlocks = 0;
 
         for (int xMod = -radius; xMod <= radius; xMod++) {
             for (int zMod = -radius; zMod <= radius; zMod++) {
                 Location test = center.getBlock().getRelative(xMod, 0, zMod).getLocation();
                 if (Objects.requireNonNull(center.getWorld()).getHighestBlockAt(test).getY() <= center.getY()) {
-                    isAbove = true;
+                    detectedBlocks++;
                 }
             }
         }
 
-        return isAbove;
+        return (surface / 4) < detectedBlocks;
     }
 
 }
