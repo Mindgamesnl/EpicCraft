@@ -19,6 +19,12 @@
     },
 
     {
+      "name": "Underwater",
+      "source": "https://www.youtube.com/watch?v=tOeIWZtTlUk",
+      "requirements": ["UNDER_WATER", "DAY", "NIGHT"]
+    },
+
+    {
       "name": "A hot day",
       "source": "https://www.youtube.com/watch?v=6_hBKIQmTnE",
       "requirements": ["HOT_BIOME", "DAY"]
@@ -26,7 +32,7 @@
 
     {
       "name": "A normal day",
-      "source": "https://www.youtube.com/watch?v=jwKpZUO51Dg",
+      "source": "https://www.youtube.com/watch?v=gVYjlmB81Hc",
       "requirements": ["ABOVE_GROUND", "DAY", "NORMAL_BIOME"]
     },
 
@@ -34,6 +40,12 @@
       "name": "An underground night",
       "source": "https://www.youtube.com/watch?v=i5y8Ib00mIY",
       "requirements": ["UNDER_GROUND", "NIGHT"]
+    },
+
+    {
+      "name": "An underground day",
+      "source": "https://www.youtube.com/watch?v=WTQY6VaX4pk",
+      "requirements": ["UNDER_GROUND", "day"]
     },
 
     {

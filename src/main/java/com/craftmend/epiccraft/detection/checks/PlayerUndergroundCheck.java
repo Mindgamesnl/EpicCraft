@@ -13,23 +13,27 @@ public class PlayerUndergroundCheck implements RequirementTest {
     private final int radius = 15;
 
     @Override
+    public boolean isAbsolutelyNecessary() {
+        return true;
+    }
+
+    @Override
     public boolean isApplicable(Player player) {
 
         Location center = player.getLocation();
-        boolean isAbove = false;
         int surface = radius * radius;
         int detectedBlocks = 0;
 
         for (int xMod = -radius; xMod <= radius; xMod++) {
             for (int zMod = -radius; zMod <= radius; zMod++) {
-                Location test = center.getBlock().getRelative(xMod, 0, zMod).getLocation();
-                if (Objects.requireNonNull(center.getWorld()).getHighestBlockAt(test).getY() > (center.getY() + 1)) {
+                Location test = center.getBlock().getRelative(xMod, 15, zMod).getLocation();
+                if (Objects.requireNonNull(center.getWorld()).getHighestBlockAt(test).getY() > (test.getY() + 1)) {
                     detectedBlocks++;
                 }
             }
         }
 
-        return (surface / 4) < detectedBlocks;
+        return (surface / 2) < detectedBlocks;
     }
 
 }

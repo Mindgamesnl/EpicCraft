@@ -13,6 +13,11 @@ public class NearVillagerCheck implements RequirementTest {
     int radius = 50;
 
     @Override
+    public boolean isAbsolutelyNecessary() {
+        return true;
+    }
+
+    @Override
     public boolean isApplicable(Player player) {
         boolean foundVillager = false;
 

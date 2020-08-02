@@ -2,10 +2,11 @@ package com.craftmend.epiccraft.detection.checks;
 
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 import lombok.NoArgsConstructor;
+import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 @NoArgsConstructor
-public class WorldIsNightCheck implements RequirementTest {
+public class PlayerUnderwaterCheck implements RequirementTest {
 
     @Override
     public boolean isAbsolutelyNecessary() {
@@ -14,8 +15,7 @@ public class WorldIsNightCheck implements RequirementTest {
 
     @Override
     public boolean isApplicable(Player player) {
-        long time = player.getWorld().getTime();
-        return time <= 0 || time >= 12300;
+        return player.getLocation().getBlock().getRelative(0, 2, 0).isLiquid();
     }
 
 }

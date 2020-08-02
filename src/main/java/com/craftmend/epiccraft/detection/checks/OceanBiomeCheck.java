@@ -20,6 +20,11 @@ public class OceanBiomeCheck implements RequirementTest {
     };
 
     @Override
+    public boolean isAbsolutelyNecessary() {
+        return true;
+    }
+
+    @Override
     public boolean isApplicable(Player player) {
         return LogicUtil.contains(player.getLocation().getBlock().getBiome(), oceanBiomes);
     }

@@ -13,10 +13,14 @@ public class PlayerAboveGroundCheck implements RequirementTest {
     private final int radius = 15;
 
     @Override
+    public boolean isAbsolutelyNecessary() {
+        return true;
+    }
+
+    @Override
     public boolean isApplicable(Player player) {
 
         Location center = player.getLocation();
-        boolean isAbove = false;
         int surface = radius * radius;
         int detectedBlocks = 0;
 

@@ -11,6 +11,7 @@ public class Matcher {
         int highestScore = 0;
         Sound bestMatch =  null;
 
+        goOverSound:
         for (Sound sound : sounds) {
             // go over all requirements, and +1 for each that is met
             int metRequirementsForSound = 0;
@@ -19,6 +20,7 @@ public class Matcher {
                     metRequirementsForSound++;
                 } else {
                     metRequirementsForSound--;
+                    if (requirement.getTest().isAbsolutelyNecessary()) continue goOverSound;
                 }
             }
 

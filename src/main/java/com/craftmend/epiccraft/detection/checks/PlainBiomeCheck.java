@@ -19,6 +19,11 @@ public class PlainBiomeCheck implements RequirementTest {
     };
 
     @Override
+    public boolean isAbsolutelyNecessary() {
+        return false;
+    }
+
+    @Override
     public boolean isApplicable(Player player) {
         return LogicUtil.contains(player.getLocation().getBlock().getBiome(), plainBiomes);
     }

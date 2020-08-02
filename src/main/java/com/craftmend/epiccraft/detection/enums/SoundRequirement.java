@@ -3,7 +3,6 @@ package com.craftmend.epiccraft.detection.enums;
 import com.craftmend.epiccraft.detection.checks.*;
 import com.craftmend.epiccraft.detection.interfaces.RequirementTest;
 import lombok.Getter;
-import lombok.SneakyThrows;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -17,6 +16,7 @@ public enum SoundRequirement {
     OCEAN_BIOME(OceanBiomeCheck.class), // REQUIRES THE PLAYER TO BE IN A OCEAN BIOME
     NORMAL_BIOME(PlainBiomeCheck.class), // REQUIRES THE BIOME TO BE PLAIN-ISH
     HOT_BIOME(HotBiomeCheck.class), // REQUIRES THE BIOME TO BE SUPER DUPER HOT (or lit)
+    UNDER_WATER(PlayerUnderwaterCheck.class), // REQUIRES THE PLAYER TO BE UNDERWATER
     NIGHT(WorldIsNightCheck.class), // REQUIRES TIME TO BE NIGHT
     DAY(WorldIsDayCheck.class); // REQUIRES TIME TO BE DAY
 
