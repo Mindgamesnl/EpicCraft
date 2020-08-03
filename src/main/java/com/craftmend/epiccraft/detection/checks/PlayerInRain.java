@@ -7,16 +7,7 @@ import org.bukkit.block.Biome;
 import org.bukkit.entity.Player;
 
 @NoArgsConstructor
-public class PlainBiomeCheck implements RequirementTest {
-
-    public static Biome[] PLAIN_BIOMES = new Biome[]{
-            Biome.PLAINS,
-            Biome.FOREST,
-            Biome.RIVER,
-            Biome.WOODED_MOUNTAINS,
-            Biome.WOODED_BADLANDS_PLATEAU,
-            Biome.MODIFIED_WOODED_BADLANDS_PLATEAU,
-    };
+public class PlayerInRain implements RequirementTest {
 
     @Override
     public boolean isAbsolutelyNecessary() {
@@ -25,6 +16,6 @@ public class PlainBiomeCheck implements RequirementTest {
 
     @Override
     public boolean isApplicable(Player player) {
-        return LogicUtil.contains(player.getLocation().getBlock().getBiome(), PLAIN_BIOMES);
+        return player.getWorld().hasStorm() && LogicUtil.contains(player.getLocation().getBlock().getBiome(), PlainBiomeCheck.PLAIN_BIOMES);
     }
 }

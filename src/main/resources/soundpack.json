@@ -7,57 +7,75 @@
     },
 
     {
-      "name": "Village day ambiance",
-      "source": "https://www.youtube.com/watch?v=2NKPXPoROqA",
-      "requirements": ["NEAR_VILLAGER", "DAY", "ABOVE_GROUND"]
+      "name": "Normal day #1",
+      "source": "https://soundcloud.com/lilypichu/avatar",
+      "requirements": ["DAY", "ABOVE_GROUND"]
     },
 
     {
-      "name": "A hot night",
-      "source": "https://www.youtube.com/watch?v=hPxvmkeG2iE",
-      "requirements": ["HOT_BIOME", "NIGHT"]
+      "name": "Normal day #2",
+      "source": "https://soundcloud.com/lilypichu/piano-vision",
+      "requirements": ["DAY", "ABOVE_GROUND"]
     },
 
     {
-      "name": "Underwater",
-      "source": "https://www.youtube.com/watch?v=tOeIWZtTlUk",
-      "requirements": ["UNDER_WATER"]
+      "name": "Normal day #3",
+      "source": "https://soundcloud.com/lilypichu/piano-lifelight",
+      "requirements": ["DAY", "ABOVE_GROUND"]
     },
 
     {
-      "name": "A hot day",
-      "source": "https://www.youtube.com/watch?v=6_hBKIQmTnE",
-      "requirements": ["HOT_BIOME", "DAY"]
+      "name": "Normal night #1",
+      "source": "https://soundcloud.com/lilypichu/lilycraftchu",
+      "requirements": ["NIGHT", "ABOVE_GROUND"]
     },
 
     {
-      "name": "A normal day",
-      "source": "https://www.youtube.com/watch?v=gVYjlmB81Hc",
-      "requirements": ["ABOVE_GROUND", "DAY", "NORMAL_BIOME"]
+      "name": "Normal night #2",
+      "source": "https://soundcloud.com/user-991924101/below-the-ground-undertale",
+      "requirements": ["NIGHT", "ABOVE_GROUND"]
     },
 
     {
-      "name": "An underground night",
-      "source": "https://www.youtube.com/watch?v=i5y8Ib00mIY",
-      "requirements": ["UNDER_GROUND", "NIGHT"]
+      "name": "Underground night #1",
+      "source": "https://soundcloud.com/innerpeacestudio/intro",
+      "requirements": ["NIGHT", "UNDER_GROUND"]
     },
 
     {
-      "name": "An underground day",
-      "source": "https://www.youtube.com/watch?v=WTQY6VaX4pk",
-      "requirements": ["UNDER_GROUND", "day"]
+      "name": "Underground day #1",
+      "source": "https://soundcloud.com/gabecastro/geese-lake",
+      "requirements": ["DAY", "UNDER_GROUND"]
     },
 
     {
-      "name": "A normal night",
-      "source": "https://www.youtube.com/watch?v=4WGiL2U5D4o",
-      "requirements": ["ABOVE_GROUND", "NIGHT"]
+      "name": "Underwater #1",
+      "source": "https://soundcloud.com/innerpeacestudio/void",
+      "requirements": ["UNDERWATER"]
     },
 
     {
-      "name": "Cold as fuck boi",
-      "source": "https://www.youtube.com/watch?v=hy-v42BLom4",
-      "requirements": ["SNOWY_BIOME"]
+      "name": "Underwater #2",
+      "source": "https://soundcloud.com/innerpeacestudio/deepsea",
+      "requirements": ["UNDERWATER"]
+    },
+
+    {
+      "name": "Rainy day #1",
+      "source": "https://soundcloud.com/innerpeacestudio/rain",
+      "requirements": ["RAIN", "DAY", "ABOVE_GROUND"]
+    },
+
+    {
+      "name": "Normal village night #1",
+      "source": "https://soundcloud.com/lilypichu/magical-forest",
+      "requirements": ["NIGHT", "ABOVE_GROUND", "NEAR_VILLAGER"]
+    },
+
+    {
+      "name": "Ocean day #1",
+      "source": "https://soundcloud.com/user-94518256/sets/dear-esther-landmark-edition",
+      "requirements": ["DAY, OCEAN_BIOME"]
     }
   ]
 }
